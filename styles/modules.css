@@ -36,3 +36,16 @@
   float:right;
   display: inline-block;
 }
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+  .site-nav ul {
+    display: block;
+  }
+  .site-nav li {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+}
