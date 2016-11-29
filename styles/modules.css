@@ -2,6 +2,7 @@
   display: none;
   padding: 0;
   list-style: none;
+  float:right;
   clear: both;
 }
 
@@ -10,6 +11,28 @@
 }
 #site-nav li {
   margin-right: .4em;
-  font-size: 1.5em;
+  font-size: .5em;
   padding: .2em .1em;
+}
+
+.left-content {
+  width: 30%;
+  display: inline-block;
+}
+
+.center-content {
+  width:40%;
+  display: inline-block;
+  margin-left: 8%;
+}
+
+#stuff {
+  font-size: .5em;
+  list-style: none;
+}
+
+.icon-menu {
+  font-size: 1em;
+  float:right;
+  display: inline-block;
 }
