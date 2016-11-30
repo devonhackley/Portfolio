@@ -53,6 +53,10 @@
   list-style: none;
 }
 
+.projects {
+  display: none;
+}
+
 .icon-menu {
   font-size: 1.5em;
   float:right;
