@@ -1,13 +1,9 @@
 body {
-  /*position: relative;*/
+  width:800px;
 }
 img {
   width:100%;
 }
-
-/*main {
-  width:650px;
-}*/
 
 header {
   margin: 0em 0em 4em;
