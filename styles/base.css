@@ -31,8 +31,9 @@ h4 {
   font-size:.8em;
   text-align: left;
   font-weight: 700;
-  width:100%;
+  width:50%;
   color:white;
+  padding-bottom: 0;
 }
 p {
   top:0;
@@ -41,10 +42,11 @@ p {
   text-align: center;
   padding: .3em;
 }
-a, a:link {
+
+a, a:link, a:active {
   text-decoration: none;
-  color:white;
+  color: #777;
 }
 a:hover,a:active {
-  color: #777;
+  color: white;
 }
