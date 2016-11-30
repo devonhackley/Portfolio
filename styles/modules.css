@@ -1,3 +1,5 @@
+/*SITE-NAV STYLES
+=======================================*/
 #site-nav ul {
   display: none;
   padding: 0;
@@ -15,6 +17,8 @@
   padding: .2em .1em;
 }
 
+/*CONTENT STYLES
+=======================================*/
 .left-content {
   width: 30%;
   display: inline-block;
@@ -22,6 +26,8 @@
 }
 .p-color {
   background-color: #77FFAA;
+  font-size: .6em;
+  font-weight: 300;
 }
 
 .center-content {
@@ -35,13 +41,17 @@
   border-top-right-radius: 10%;
 
 }
-.projects {
+ .project-info {
   width:50%;
   margin: 0 auto;
   background-color: #77FFAA;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
   border-bottom: 2px solid red;
+}
+.projects {
+  width:50%;
+  display:none;
 }
 #footer-p {
   font-size: .5em;
@@ -51,10 +61,6 @@
 #stuff {
   font-size: .5em;
   list-style: none;
-}
-
-.projects {
-  display: none;
 }
 
 .icon-menu {

@@ -1,6 +1,4 @@
-body {
-  width:800px;
-}
+
 img {
   width:100%;
 }
@@ -30,9 +28,11 @@ h2 {
   font-weight: 300;
 }
 h4 {
-  font-size:.5em;
-  text-align: center;
+  font-size:.8em;
+  text-align: left;
   font-weight: 700;
+  width:100%;
+  color:white;
 }
 p {
   top:0;
@@ -41,7 +41,10 @@ p {
   text-align: center;
   padding: .3em;
 }
-a, a:link, a:active {
+a, a:link {
   text-decoration: none;
+  color:white;
+}
+a:hover,a:active {
   color: #777;
 }
