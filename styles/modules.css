@@ -19,7 +19,7 @@
 
 /*CONTENT STYLES
 =======================================*/
-.left-content {
+#left-content {
   width: 30%;
   display: inline-block;
   margin-left: 5%;
@@ -30,7 +30,7 @@
   font-weight: 300;
 }
 
-.center-content {
+#center-content {
   width:40%;
   display: inline-block;
   margin-left: 15%;
