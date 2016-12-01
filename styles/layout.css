@@ -1,0 +1,20 @@
+#portfolio {
+  margin-top: 10%;
+}
+
+#left-content {
+  width: 30%;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+#center-content {
+  width:40%;
+  display: inline-block;
+  margin-left: 15%;
+  margin-top: -10%;
+  background-color: #77FFAA;
+  overflow: hidden;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
