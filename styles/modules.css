@@ -16,6 +16,11 @@
   font-size: .5em;
   padding: .2em .1em;
 }
+#site-nav li:hover {
+  border-bottom: .3em solid red;
+
+
+}
 
 /*CONTENT STYLES
 =======================================*/
@@ -42,7 +47,7 @@
 
 }
  .project-info {
-  width:60%;
+  width:50%;
   margin: -5% 20% 5%;
   padding:.2em .4em;
   background-color: #77FFAA;
@@ -61,6 +66,9 @@
 .projects {
   width:50%;
   display:none;
+}
+.project-name:hover {
+  color: white;
 }
 
 #footer-p {
