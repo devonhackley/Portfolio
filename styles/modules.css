@@ -17,15 +17,13 @@
   padding: .2em .1em;
 }
 #site-nav li:hover {
-  border-bottom: .3em solid red;
-
-
+  border-bottom: .2em solid red;
 }
 
 /*PROJECT STYLES
 =======================================*/
 .p-color {
-  font-family: sans-serif;
+  font-family: myriad;
   font-size: .5em;
   font-weight: 300;
 }
@@ -86,7 +84,7 @@
   }
   #site-nav li {
     display: inline-block;;
-    padding: .5em 1em;
+    padding: .8em 1em;
     font-size: .6em;
   }
 

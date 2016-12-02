@@ -7,12 +7,9 @@ function Projects(item) {
 };
 
 Projects.prototype.toHtml = function() {
-  var $newProject = $('article.projects').clone();
-  $newProject.find('a').text(this.name);
-  $newProject.find('a[href]').attr('href',this.url);
-  $newProject.find('.project-info').html(this.info);
-  $newProject.removeAttr('class');
-  return $newProject;
+  var $source = $('#portfolio-template').html();
+  var templateBuild = Handlebars.compile($source);
+  return templateBuild(this);
 };
 
 myProjects.forEach(function(projectObj) {
