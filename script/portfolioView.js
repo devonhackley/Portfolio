@@ -9,4 +9,11 @@ portfolioView.handleNavBar = function() {
   $('#site-nav .site-nav:first').click();
 };
 
-portfolioView.handleNavBar();
+portfolioView.renderIndexPage = function() {
+  Portfolio.projects.forEach(function(key){
+    $('#lower-content').append(key.toHtml());
+  });
+  portfolioView.handleNavBar();
+};
+
+Projects.fetchAll();
