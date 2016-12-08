@@ -1,29 +1,30 @@
-function Projects(items) {
+function Project(items) {
   for (var keys in items) {
     this[keys] = items[keys];
   }
 };
 
-Projects.projects= [];
+Project.projects= [];
 
-Projects.prototype.toHtml = function() {
+Project.prototype.toHtml = function() {
   var $source = $('#portfolio-template').html();
   var templateBuild = Handlebars.compile($source);
   return templateBuild(this);
 };
-Projects.loadAll = function(input) {
-  input.forEach(function(ele) {
-    Projects.projects.push(new Projects(ele));
+Project.loadAll = function(input) {
+  input.forEach(function(projectObj) {
+    Project.projects.push(new Project(projectObj));
   });
 };
 
-Projects.fetchAll = function() {
+Project.fetchAll = function() {
   if (localStorage.myProjects) {
-    Projects.loadAll(JSON.parse(localStorage.getItem('myProjects')));
+    Project.loadAll(JSON.parse(localStorage.getItem('myProjects')));
+    console.log(localStorage.getItem('myProjects'));
     portfolioView.renderIndexPage();
   } else {
     $.getJSON('data/myProjects.json', function(data) {
-      Projects.loadAll(data);
+      Project.loadAll(data);
       localStorage.setItem('myProjects',JSON.stringify(data));
       portfolioView.renderIndexPage();
     });
