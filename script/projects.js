@@ -34,11 +34,3 @@
   };
   module.Project = Project;
 })(window);
-
-// myProjects.forEach(function(projectObj) {
-//   projects.push(new Projects(projectObj));
-// });
-//
-// projects.forEach(function(projectObj) {
-//   $('#lower-content').append(projectObj.toHtml());
-// });
