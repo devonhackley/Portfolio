@@ -1,0 +1,91 @@
+/*SITE-NAV STYLES
+=======================================*/
+#site-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  float:right;
+  clear: both;
+}
+
+#site-nav:hover ul {
+  display: block;
+}
+#site-nav li {
+  margin-right: .4em;
+  font-size: .5em;
+  padding: .2em .1em;
+}
+#site-nav li:hover {
+  border-bottom: .2em solid red;
+}
+
+/*PROJECT STYLES
+=======================================*/
+.p-color {
+  font-family: myriad;
+  font-size: .5em;
+  font-weight: 300;
+}
+
+ .project-info {
+  width:50%;
+  margin: -5% 20% 5%;
+  padding:.2em .4em;
+  background-color: #77FFAA;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom: 2px solid red;
+}
+.project-info img {
+  width:30%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.projects {
+  width:50%;
+  display:none;
+}
+.project-name:hover {
+  color: white;
+}
+
+#footer-p {
+  font-size: .5em;
+  background-color: white;
+}
+
+#stuff {
+  font-size: .5em;
+  list-style: none;
+}
+
+.icon-menu {
+  font-size: 1.5em;
+  float:right;
+  display: inline-block;
+  color:#FAFA77;
+}
+
+.box {
+  border-bottom: 2px solid red;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+  #site-nav ul {
+    display: block;
+  }
+  #site-nav li {
+    display: inline-block;;
+    padding: .8em 1em;
+    font-size: .6em;
+  }
+
+}
