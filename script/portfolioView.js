@@ -10,8 +10,8 @@ portfolioView.handleNavBar = function() {
 };
 
 portfolioView.renderIndexPage = function() {
-  Project.projects.forEach(function(a){
-    $('#lower-content').append(a.toHtml());
+  Project.projects.map(function(a){
+    return $('#lower-content').append(a.toHtml());
   });
   portfolioView.handleNavBar();
 };
