@@ -1,10 +1,12 @@
-
+* {
+  box-sizing: border-box;
+}
 img {
   width:100%;
 }
 
 header {
-  margin: 0em 0em 4em;
+  margin: 0em 0em 2em;
   padding:0;
   background-color: black;
 }
@@ -15,7 +17,7 @@ footer {
 }
 h1 {
   font-family: Epic;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding:0;
   margin:0;
   display: inline-block;
@@ -26,7 +28,7 @@ h2 {
   font-family: Epic;
   font-size:1em;
   text-align: center;
-  margin: 5%;
+  margin: 0% 5% 5%;
   font-weight: 300;
 }
 h4 {
@@ -49,7 +51,7 @@ p {
 
 a, a:link, a:active {
   text-decoration: none;
-  color: #777;
+  color: white;
 }
 /*a:hover,a:active {
   color: white;

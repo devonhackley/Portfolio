@@ -20,9 +20,10 @@
   <body>
     <main>
       <header>
+        <h1>Devon's Portfolio</h1>
         <nav id="site-nav">
             <div class="icon-menu"></div>
-            <ul>
+            <ul class>
               <li class="site-tab" data-content="home"><a href="#" class="icon-home3"></a>Home</li>
               <li class="site-tab" data-content="about"><a href="#" class="icon-power"></a>About Me</li>
               <li class="site-tab" data-content="portfolio"><a href="#" class="icon-rocket"></a>Projects</li>
@@ -30,47 +31,51 @@
               <li class=""><a href="#" class="icon-twitter3">Twitter</a></li>
             </ul>
         </nav>
-        <h1>Devon's Portfolio</h1>
+        <!-- <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+        <label for="nav-trigger"></label> -->
       </header>
-      <section id="home" class="content">
-        <section id="left-content">
-          <ul id="stuff">
-            <li><img src="http://orig01.deviantart.net/c2b9/f/2016/131/b/e/rowlet_by_vayreceane-da23nxt.jpg"></li>
-          </ul>
+      <section class="clear"></section>
+      <div class="site-wrap">
+        <section id="home" class="content">
+          <section id="left-content">
+            <article class="portfolio-pic">
+              <img src="http://orig01.deviantart.net/c2b9/f/2016/131/b/e/rowlet_by_vayreceane-da23nxt.jpg" alt="">
+            </article>
+          </section>
+          <section  id="center-content">
+            <article class="box">
+              <p class="p-color">
+                Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum
+              </p>
+            </article>
+            <article class="box">
+              <p class="p-color">
+                Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum
+              </p>
+            </article>
+          </section>
         </section>
-        <section  id="center-content">
-          <article class="box">
-            <p class="p-color">
-              Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum
-            </p>
-          </article>
-          <article class="box">
-            <p class="p-color">
-              Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum
-            </p>
-          </article>
+        <section id="portfolio" class="content">
+          <section  id="lower-content">
+            <h2>My Projects</h2>
+            <article class="projects"></article>
+          </section>
         </section>
-      </section>
-      <section id="portfolio" class="content">
-        <section  id="lower-content">
-          <h2>My Projects</h2>
-          <article class="projects"></article>
-        </section>
-      </section>
-      <section id="about" class="content">
-        <section>
-          <h2>A Few Facts About Me:</h1>
-          <ul>
-            <li>I like coding</li>
-            <li>I was born in Japan</li>
-            <li>I have an adorable Corgi named Korra</li>
-          </ul>
-        </section>
-      </section>
-    </main>
-    <footer>
-      <p id="footer-p">Copyright &copy; Devon Hackley</p>
-    </footer>
+        <section id="about" class="content">
+          <section>
+            <h2>A Few Facts About Me:</h1>
+              <ul>
+                <li>I like coding</li>
+                <li>I was born in Japan</li>
+                <li>I have an adorable Corgi named Korra</li>
+              </ul>
+            </section>
+          </section>
+        </main>
+        <footer>
+          <p id="footer-p">Copyright &copy; Devon Hackley</p>
+        </footer>
+      </div>
     <script
    src="https://code.jquery.com/jquery-3.1.1.min.js"
    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
