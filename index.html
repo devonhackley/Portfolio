@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Devon's Portfolio</title>
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="vendor/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+
+    <script id="portfolio-template" type="text/x-handlebars-template">
+      <header>
+        <h4><a class="project-name" href="{{url}}">{{name}}</a></h4>
+      </header>
+      <section class="project-info">{{{info}}}</section>
+    </script>
+
+    <script id="github-template" type="text/x-handlebars-template">
+      <li>
+          <a href="{{html_url}}" target="_blank"><h4 style="color:black">{{name}}</h4></a>
+          <p>Created: {{created_at}}</p>
+          <p>Last updated: {{updated_at}}</p>
+      </li>
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Devon's Portfolio</h1>
+        <nav id="site-nav">
+            <div class="icon-menu"></div>
+            <ul class>
+              <li class="site-tab" data-content="home"><a href="/" class="icon-home3"></a>Home</li>
+              <li class="site-tab" data-content="about"><a href="/about" class="icon-power"></a>About Me</li>
+              <li class="site-tab" data-content="portfolio"><a href="/projects" class="icon-rocket"></a>Projects</li>
+              <li class=""><a href="https://github.com/devonhackley" class="icon-github"></a>Github</li>
+              <li class=""><a href="#" class="icon-twitter3">Twitter</a></li>
+            </ul>
+        </nav>
+        <!-- <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+        <label for="nav-trigger"></label> -->
+      </header>
+      <section class="clear"></section>
+      <div class="site-wrap">
+        <section id="home" class="content">
+          <section id="left-content">
+            <article class="portfolio-pic">
+              <img src="http://orig01.deviantart.net/c2b9/f/2016/131/b/e/rowlet_by_vayreceane-da23nxt.jpg" alt="">
+            </article>
+          </section>
+          <section  id="center-content">
+            <article class="box">
+              <p class="p-color">
+                Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum
+              </p>
+            </article>
+            <article class="box">
+              <p class="p-color">
+                Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum
+              </p>
+            </article>
+          </section>
+        </section>
+        <section id="portfolio" class="content">
+          <div class="github-content"></div>
+          <section  id="lower-content">
+            <h2>My Projects</h2>
+            <article class="projects"></article>
+          </section>
+        </section>
+        <section id="about" class="content">
+          <section>
+            <h2>A Few Facts About Me:</h1>
+              <ul>
+                <li>I like coding</li>
+                <li>I was born in Japan</li>
+                <li>I have an adorable Corgi named Korra</li>
+              </ul>
+            </section>
+          </section>
+        </main>
+        <footer>
+          <p id="footer-p">Copyright &copy; Devon Hackley</p>
+        </footer>
+      </div>
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="githubToken.js"></script>
+
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="script/myProjects.js"></script>
+  <script src="script/model/projects.js"></script>
+  <script src="script/model/repo.js"></script>
+  <script src="script/view/portfolioView.js"></script>
+  <script src="script/view/repoView.js"></script>
+  <script src="script/controller/aboutController.js"></script>
+  <script src="script/controller/projectController.js"></script>
+  <script src="script/controller/route.js"></script>
+  </body>
+</html>
