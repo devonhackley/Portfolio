@@ -16,6 +16,14 @@
       </header>
       <section class="project-info">{{{info}}}</section>
     </script>
+
+    <script id="github-template" type="text/x-handlebars-template">
+      <li>
+          <a href="{{html_url}}" target="_blank"><h4 style="color:black">{{name}}</h4></a>
+          <p>Created: {{created_at}}</p>
+          <p>Last updated: {{updated_at}}</p>
+      </li>
+    </script>
   </head>
   <body>
     <main>
@@ -56,6 +64,7 @@
           </section>
         </section>
         <section id="portfolio" class="content">
+          <div class="github-content"></div>
           <section  id="lower-content">
             <h2>My Projects</h2>
             <article class="projects"></article>
@@ -78,6 +87,9 @@
       </div>
 
 
+
+  <script src="githubToken.js"></script>
+
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -85,8 +97,10 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="script/myProjects.js"></script>
-  <script src="script/projects.js"></script>
-  <script src="script/portfolioView.js"></script>
+  <script src="script/model/projects.js"></script>
+  <script src="script/model/repo.js"></script>
+  <script src="script/view/portfolioView.js"></script>
+  <script src="script/view/repoView.js"></script>
   <script src="script/controller/aboutController.js"></script>
   <script src="script/controller/projectController.js"></script>
   <script src="script/controller/route.js"></script>
